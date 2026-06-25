@@ -145,6 +145,29 @@
   .easy .item small{display:block;color:var(--gray);font-weight:700;font-size:.92rem;margin-top:4px;}
   @media(max-width:760px){.easy .row{grid-template-columns:repeat(2,1fr);}}
 
+  /* ===== Happiness compare image ===== */
+  .happy-img{margin-top:30px;display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center;}
+  .happy-img .cap .big{font-size:clamp(1.4rem,4vw,2rem);font-weight:900;line-height:1.5;}
+  .happy-img .cap .big .hl{background:linear-gradient(transparent 62%,#ffe9a8 62%);}
+  .happy-img .cap p{margin-top:14px;color:var(--gray);font-weight:600;}
+  .happy-img a{display:block;border-radius:14px;overflow:hidden;box-shadow:0 16px 36px rgba(0,0,0,.14);}
+  .happy-img img{width:100%;display:block;}
+  @media(max-width:820px){.happy-img{grid-template-columns:1fr;}}
+
+  /* ===== Official flyers ===== */
+  .flyers{background:var(--sky-l);}
+  .flyers .title{text-align:center;}
+  .flyers .sub{text-align:center;color:var(--gray);font-weight:700;margin:-2px 0 28px;}
+  .fgrid{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:start;}
+  .fcard{background:#fff;border-radius:18px;padding:14px;box-shadow:0 14px 34px rgba(31,147,199,.14);}
+  .fcard a{display:block;border-radius:10px;overflow:hidden;}
+  .fcard img{width:100%;display:block;transition:.25s;}
+  .fcard:hover img{transform:scale(1.02);}
+  .fcard .fcap{text-align:center;font-weight:800;padding:12px 6px 4px;}
+  .fcard .fcap small{display:block;color:var(--sky-d);font-weight:700;font-size:.82rem;margin-top:2px;}
+  .zoomnote{text-align:center;color:var(--gray);font-weight:700;font-size:.85rem;margin-top:18px;}
+  @media(max-width:760px){.fgrid{grid-template-columns:1fr;}}
+
   /* ===== Voices ===== */
   .voices{background:linear-gradient(180deg,#fff,#eafaff);}
   .voices .title{text-align:center;}
@@ -228,6 +251,7 @@
     <ul>
       <li><a href="#vision">理念</a></li>
       <li><a href="#policy">政策</a></li>
+      <li><a href="#flyers">チラシ</a></li>
       <li><a href="#voices">市民の声</a></li>
       <li><a href="#profile">プロフィール</a></li>
       <li><a href="#event">演説会</a></li>
@@ -284,6 +308,22 @@
         </p>
       </div>
       <img src="images/warmth-talk.jpg" alt="市民に語りかける久本和明">
+    </div>
+  </div>
+</section>
+
+<!-- Happiness comparison -->
+<section class="sec vision" style="padding-top:0;">
+  <div class="wrap">
+    <div class="happy-img">
+      <div class="cap">
+        <span class="eyebrow">DATA ― なぜ「幸福度」なのか</span>
+        <p class="big">同じ兵庫県でも、<br><span class="hl">幸福度には、ここまで差が出る。</span></p>
+        <p>子育て・教育・地域のつながり・行政への信頼――。市民の声から見えた項目で、まちの「幸福度」は大きく変わります。久本和明は、加古川のこの数字を本気で引き上げます。</p>
+      </div>
+      <a href="images/happiness-compare.jpg" target="_blank" rel="noopener">
+        <img src="images/happiness-compare.jpg" alt="明石と加古川の幸福度比較グラフ">
+      </a>
     </div>
   </div>
 </section>
@@ -587,6 +627,30 @@
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- Official flyers -->
+<section class="sec flyers" id="flyers">
+  <div class="wrap">
+    <span class="eyebrow" style="display:block;text-align:center;border:none;padding:0;">FLYER ― 公式チラシ・ポスター</span>
+    <h2 class="title">久本和明の、ぜんぶ。</h2>
+    <p class="sub">「街が大家族」のビジョンと政策を、1枚にまとめました。</p>
+    <div class="fgrid">
+      <div class="fcard">
+        <a href="images/poster-vision.jpg" target="_blank" rel="noopener">
+          <img src="images/poster-vision.jpg" alt="街が大家族 みんなが幸せな街へ ポスター（久本和明）">
+        </a>
+        <div class="fcap">街が大家族 ― みんなが幸せな街へ<small>ビジョン＆プロフィール ポスター</small></div>
+      </div>
+      <div class="fcard">
+        <a href="images/flyer-policy.jpg" target="_blank" rel="noopener">
+          <img src="images/flyer-policy.jpg" alt="建設箱物70億円削減 13の市民還元 政策チラシ">
+        </a>
+        <div class="fcap">箱物70億円削減 → 市民へ還元<small>13の無料＆幸福度70億投資 政策チラシ</small></div>
+      </div>
+    </div>
+    <p class="zoomnote">📲 画像をタップすると、大きく表示されます（印刷・保存もできます）</p>
   </div>
 </section>
 
