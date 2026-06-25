@@ -145,6 +145,20 @@
   .easy .item small{display:block;color:var(--gray);font-weight:700;font-size:.92rem;margin-top:4px;}
   @media(max-width:760px){.easy .row{grid-template-columns:repeat(2,1fr);}}
 
+  /* ===== Voices ===== */
+  .voices{background:linear-gradient(180deg,#fff,#eafaff);}
+  .voices .title{text-align:center;}
+  .voices .sub{text-align:center;color:var(--gray);font-weight:700;margin:-2px 0 26px;}
+  .vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:18px;}
+  .vbubble{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px 20px 16px;position:relative;font-weight:700;box-shadow:0 8px 20px rgba(31,147,199,.08);}
+  .vbubble .q{font-size:1.02rem;line-height:1.7;}
+  .vbubble .who{display:flex;align-items:center;gap:8px;margin-top:12px;color:var(--sky-d);font-weight:800;font-size:.85rem;}
+  .vbubble .who i{width:26px;height:26px;border-radius:50%;background:var(--sky-l);display:flex;align-items:center;justify-content:center;font-style:normal;}
+  .vbubble.warm{background:#fff7e8;border-color:#ffe0a6;}
+  .anec{margin-top:24px;background:#fff;border:2px dashed var(--sky);border-radius:18px;padding:22px 24px;text-align:center;font-weight:800;line-height:1.8;}
+  .anec b{color:var(--sky-d);}
+  .vclose{text-align:center;margin-top:22px;font-weight:800;font-size:1.1rem;color:var(--sky-d);}
+
   /* ===== Compare ===== */
   .compare{background:var(--sky-l);}
   .ctable{display:grid;grid-template-columns:1fr 1fr;gap:0;border-radius:var(--radius);overflow:hidden;box-shadow:0 14px 34px rgba(0,0,0,.10);margin-top:14px;}
@@ -214,6 +228,7 @@
     <ul>
       <li><a href="#vision">理念</a></li>
       <li><a href="#policy">政策</a></li>
+      <li><a href="#voices">市民の声</a></li>
       <li><a href="#profile">プロフィール</a></li>
       <li><a href="#event">演説会</a></li>
     </ul>
@@ -383,8 +398,8 @@
 <!-- Policies -->
 <section class="sec policy" id="policy">
   <div class="wrap">
-    <span class="eyebrow">POLICY ― 4つの約束</span>
-    <h2 class="title">「大家族」を、政策にしました。<small>※ 神戸新聞 候補者アンケート掲載の政策をもとに構成</small></h2>
+    <span class="eyebrow">POLICY ― 5つの約束</span>
+    <h2 class="title">「大家族」を、政策にしました。<small>※ 神戸新聞 候補者アンケート・街頭での発言をもとに構成</small></h2>
     <div class="pgrid">
 
       <div class="pcard">
@@ -514,12 +529,42 @@
         </div>
       </div>
 
+      <div class="pcard">
+        <div class="illust">
+          <div class="num2">5</div><div class="badge">ぜんぶ0円</div>
+          <svg viewBox="0 0 230 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="シニアの居場所のイラスト">
+            <rect x="0" y="0" width="230" height="150" rx="14" fill="#eafaff"/>
+            <!-- table -->
+            <rect x="48" y="104" width="134" height="12" rx="4" fill="#f0c38a"/>
+            <!-- coffee cup -->
+            <ellipse cx="115" cy="98" rx="26" ry="8" fill="#caa06a"/>
+            <path d="M91 90 h48 v4 q0 10 -24 10 q-24 0 -24-10 z" fill="#fff" stroke="#37b6e9" stroke-width="3"/>
+            <path d="M139 92 q14 0 14 9 q0 9 -14 9" fill="none" stroke="#37b6e9" stroke-width="3"/>
+            <path d="M104 80 q4-6 0-12 M115 80 q4-6 0-12 M126 80 q4-6 0-12" stroke="#bfe6f7" stroke-width="3" fill="none"/>
+            <!-- two seniors chatting -->
+            <circle cx="64" cy="64" r="15" fill="#ffd8b0"/><path d="M50 59 a14 14 0 0 1 28 0 z" fill="#c9ced2"/><rect x="51" y="80" width="26" height="22" rx="9" fill="#f4a700"/>
+            <circle cx="166" cy="64" r="15" fill="#ffd8b0"/><path d="M152 59 a14 13 0 0 1 28 0 q-14 6 -28 0 z" fill="#e7ecef"/><rect x="153" y="80" width="26" height="22" rx="9" fill="#5fc18c"/>
+            <!-- free tag -->
+            <g transform="rotate(-10 150 30)"><rect x="120" y="18" width="64" height="24" rx="12" fill="#f4a700"/><text x="152" y="35" text-anchor="middle" font-size="14" font-weight="900" fill="#fff">居場所0円</text></g>
+          </svg>
+        </div>
+        <h3>シニアの居場所と、つながりを0円で</h3>
+        <div class="body">
+          コロナで失われた人と人のつながりを取り戻す。お年寄りが気軽に集える場所を、お金の心配なく。
+          <ul class="pts">
+            <li><strong>シニアカフェ</strong>を0円で利用できる場に</li>
+            <li><strong>自治会費・居場所</strong>の負担も0円をめざす</li>
+            <li>開発より先に、高齢者の足とサポートを充実</li>
+          </ul>
+        </div>
+      </div>
+
     </div>
 
     <!-- big easy summary for all ages -->
     <div class="easy" style="margin-top:40px;">
-      <p style="text-align:center;font-weight:900;font-size:1.2rem;margin-bottom:14px;">ひと目でわかる、4つの約束</p>
-      <div class="row">
+      <p style="text-align:center;font-weight:900;font-size:1.2rem;margin-bottom:14px;">ひと目でわかる、5つの約束</p>
+      <div class="row" style="grid-template-columns:repeat(auto-fit,minmax(150px,1fr));">
         <div class="item">
           <svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="40" fill="#eafaff"/><circle cx="40" cy="32" r="13" fill="#ffd8b0"/><path d="M27 27 a13 13 0 0 1 26 0 z" fill="#3a4a55"/><path d="M24 60 q16-16 32 0 z" fill="#5fc18c"/><path d="M58 24 c-4-7 -16-6 -16 3 c0 7 11 12 16 16 c5-4 16-9 16-16 c0-9 -12-10 -16-3 z" fill="#ff8a73" transform="scale(.55) translate(40 8)"/></svg>
           <b>教育</b><small>フリースクール<br>100%助成</small>
@@ -535,6 +580,10 @@
         <div class="item">
           <svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="40" fill="#eafaff"/><circle cx="27" cy="38" r="9" fill="#ffd8b0"/><rect x="20" y="48" width="14" height="14" rx="5" fill="#f4a700"/><circle cx="53" cy="38" r="9" fill="#ffd8b0"/><rect x="46" y="48" width="14" height="14" rx="5" fill="#ff9bb3"/><path d="M40 24 c-4-7 -15-6 -15 3 c0 7 10 12 15 15 c5-3 15-8 15-15 c0-9 -11-10 -15-3 z" fill="#ff8a73"/></svg>
           <b>子育て</b><small>街ぐるみで<br>支える</small>
+        </div>
+        <div class="item">
+          <svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="40" fill="#eafaff"/><path d="M28 44 h24 v3 q0 7 -12 7 q-12 0 -12-7 z" fill="#fff" stroke="#37b6e9" stroke-width="2.5"/><path d="M52 45 q8 0 8 5 q0 5 -8 5" fill="none" stroke="#37b6e9" stroke-width="2.5"/><path d="M35 40 q3-4 0-8 M40 40 q3-4 0-8 M45 40 q3-4 0-8" stroke="#bfe6f7" stroke-width="2.5" fill="none"/><rect x="24" y="56" width="32" height="5" rx="2" fill="#f0c38a"/></svg>
+          <b>居場所</b><small>シニアカフェ<br>0円で集える</small>
         </div>
       </div>
     </div>
@@ -554,6 +603,7 @@
           <li>バス減便で高齢者の足が不便に</li>
           <li>不登校の家庭が相談先に困る</li>
           <li>子育ての負担はお母さん任せ</li>
+          <li>コロナ後、居場所・つながりが減ったまま</li>
           <li>市民の声が市政に届きにくい</li>
         </ul>
       </div>
@@ -564,6 +614,7 @@
           <li>かこバスミニ5倍増便で移動が自由に</li>
           <li>フリースクール100％助成で安心</li>
           <li>街全体で子育てを支える</li>
+          <li>シニアカフェ・居場所を0円で（つながり再生）</li>
           <li>市民全員の声につながる愛と情熱の市政</li>
         </ul>
       </div>
@@ -613,6 +664,87 @@
         </ul>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- Voices -->
+<section class="sec voices" id="voices">
+  <div class="wrap">
+    <span class="eyebrow" style="display:block;text-align:center;border:none;padding:0;">VOICE ― 街で聞いた、市民の声</span>
+    <h2 class="title">あなたの「こうしてほしい」が、<br>政策になっていく。</h2>
+    <p class="sub">久本和明が街頭で実際にいただいた、あたたかい声をご紹介します。</p>
+    <div class="vgrid">
+
+      <div class="vbubble warm">
+        <p class="q">「バスの改善、ずっとしてほしいと思ってた！大きな開発の前に、まずそういう事をしてほしいの。」</p>
+        <div class="who"><i>👵</i>70代・女性</div>
+      </div>
+
+      <div class="vbubble warm">
+        <p class="q">「子どものための政策はみんなする。でも、私らみたいな年寄りのためにも、もっとしてほしかったんよ。」</p>
+        <div class="who"><i>👵</i>70代・女性</div>
+      </div>
+
+      <div class="vbubble warm">
+        <p class="q">「コロナで居場所がなくなって、つながりが減った。シニアカフェや居場所があれば、ほんま嬉しい。」</p>
+        <div class="who"><i>👵</i>60代・女性</div>
+      </div>
+
+      <div class="vbubble warm">
+        <p class="q">「駅前のセンター、壊すよりも、市民に還元してくれる税金の使い方のほうが嬉しいわ。」</p>
+        <div class="who"><i>👵</i>70代・女性</div>
+      </div>
+
+      <div class="vbubble warm">
+        <p class="q">「他の地域は、もう高齢者のサポートやバスがある。加古川にも、そういうのをしてほしかったの。」</p>
+        <div class="who"><i>👵</i>70代・女性</div>
+      </div>
+
+      <div class="vbubble">
+        <p class="q">「前から駅前で挨拶してくれてて、“何やろ？”って気になってたんよ。」</p>
+        <div class="who"><i>🙋‍♀️</i>30代・女性</div>
+      </div>
+
+      <div class="vbubble">
+        <p class="q">「マイクを持って話してる女性の方の声、すごくステキやね。」</p>
+        <div class="who"><i>👵</i>70代・女性</div>
+      </div>
+
+      <div class="vbubble">
+        <p class="q">「頑張ってや！応援してるで。」</p>
+        <div class="who"><i>👨</i>50代・男性</div>
+      </div>
+
+      <div class="vbubble">
+        <p class="q">「お父さんにも入れるように、言うとくね。」</p>
+        <div class="who"><i>🙆‍♀️</i>60代・女性</div>
+      </div>
+
+      <div class="vbubble">
+        <p class="q">「元々、久本さんに入れるつもりです。」</p>
+        <div class="who"><i>🙋</i>20代・男性</div>
+      </div>
+
+      <div class="vbubble">
+        <p class="q">「もう、入れるって決めてるよ。」</p>
+        <div class="who"><i>🙆‍♀️</i>50代・女性</div>
+      </div>
+
+      <div class="vbubble">
+        <p class="q">「加古川市民じゃないけど、チラシちょうだい。知り合いに渡しとくわ。」</p>
+        <div class="who"><i>🙋‍♂️</i>40〜50代・男女</div>
+      </div>
+
+    </div>
+
+    <div class="anec">
+      🌱 街での、ほっこり一コマ<br>
+      おばちゃん「あんた、まだ若いやろー？」　久本「いえ、<b>42歳</b>ですよ」<br>
+      おばちゃん「えぇー！若く見えるんやなぁ（笑）」<br>
+      ―― そんな笑顔のやりとりも、まちづくりの第一歩です。
+    </div>
+
+    <p class="vclose">☔ 雨の日も、たくさんの方が受け取ってくださいました。<br>「毎日ご苦労様」と声をかけてくださる方、子育て世代の方も、足を止めて聴いてくれました。本当にありがとうございます。</p>
   </div>
 </section>
 
